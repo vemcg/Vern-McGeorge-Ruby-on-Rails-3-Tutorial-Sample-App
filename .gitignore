@@ -1,0 +1,5 @@
+*.komodoproject
+public/index.html
+log/
+tmp/
+db/*.sqlite3
