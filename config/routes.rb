@@ -52,10 +52,11 @@ HartlSample1::Application.routes.draw do
   # root :to => "welcome#index"
   
   root :to => "pages#home"
-  get "pages/home"
-  get "pages/help"
-  get "pages/contact"
-  get "pages/about"
+  match '/home',    :to => 'pages#home'
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
+  match '/sign_in', :to => 'pages#help'
 
   # See how all your routes lay out with "rake routes"
 
