@@ -1,4 +1,5 @@
 *.komodoproject
+.idea
 public/index.html
 log/
 tmp/

@@ -15,7 +15,7 @@ HartlSample1::Application.routes.draw do
   #   resources :products
   
   resources :users
-  match '/signup', :to => 'users#new'
+  get '/signup', :to => 'users#new'
 
   # Sample resource route with options:
   #   resources :products do
